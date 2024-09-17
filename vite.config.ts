@@ -1,7 +1,8 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-    optimizeDeps: {
-        exclude: ["@babylonjs/havok"],
-  }
+  assetsInclude: ["*.glb"],
+  optimizeDeps: {
+    exclude: ["@babylonjs/havok"],
+  },
 });
