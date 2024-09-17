@@ -3,8 +3,11 @@ import "./style.css";
 import { Scene } from "@babylonjs/core/scene";
 import "@babylonjs/core/Materials/standardMaterial";
 import { setupInspector } from "./inspector";
+import { HavokPlugin } from "@babylonjs/core/Physics/v2/Plugins/havokPlugin";
+import HavokPhysics from "@babylonjs/havok";
+import { Vector3 } from "@babylonjs/core/Maths/math.vector";
 
-export function setupBabylon(onSceneReady: (scene: Scene) => void) {
+export async function setupBabylon(onSceneReady: (scene: Scene) => void) {
   const canvas = document.querySelector<HTMLCanvasElement>("canvas#c3d");
 
   // initialize babylon scene and engine
@@ -15,12 +18,21 @@ export function setupBabylon(onSceneReady: (scene: Scene) => void) {
     engine.resize();
   });
 
+  await setupPhysics(scene)
+
   scene.onReadyObservable.addOnce(onSceneReady);
 
-  setupInspector(scene);
+  await setupInspector(scene);
 
   // run the main render loop
   engine.runRenderLoop(() => {
     scene.render();
   });
 }
+
+async function setupPhysics(scene: Scene) {
+  const havokInstance = await HavokPhysics();
+  const havokPlugin = new HavokPlugin(true, havokInstance);
+  scene.enablePhysics(new Vector3(0, -9.8, 0), havokPlugin);
+}
+
