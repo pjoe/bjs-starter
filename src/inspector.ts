@@ -5,7 +5,7 @@ import "@babylonjs/inspector";
 export function setupInspector(scene: Scene) {
   window.addEventListener("keydown", (ev) => {
     // Alt+I toggles inspector
-    if (ev.altKey && ev.keyCode === 73) {
+    if (ev.altKey && ev.key === 'i') {
       if (scene.debugLayer.isVisible()) {
         scene.debugLayer.hide();
       } else {
