@@ -1,7 +1,7 @@
 {
-  "title": "Vite (TS)",
-  "description": "Starter template for Vite + TypeScript",
+  "title": "Babylon.js Vite (TS)",
+  "description": "Starter template for Babylon.js + Vite + TypeScript",
   "iconUrl": "https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/vite-ts/.codesandbox/icon.png",
-  "tags": ["vite", "javascript", "typescript", "vanilla"],
+  "tags": ["vite", "javascript", "typescript", "vanilla", "babylonjs"],
   "published": true
 }
