@@ -4,10 +4,8 @@
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
-image: gitpod/workspace-node-20
-
 tasks:
-  - init: pnpm install && pnpm run build
+  - init: pnpm install --frozen-lockfile
     command: pnpm run dev
 
 
