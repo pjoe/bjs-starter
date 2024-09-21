@@ -5,6 +5,7 @@ import "@babylonjs/core/Materials/standardMaterial";
 import { setupInspector } from "./inspector";
 import { HavokPlugin } from "@babylonjs/core/Physics/v2/Plugins/havokPlugin";
 import HavokPhysics from "@babylonjs/havok";
+import '@babylonjs/core/Physics/v2/physicsEngineComponent';
 import { Vector3 } from "@babylonjs/core/Maths/math.vector";
 
 export async function setupBabylon(onSceneReady: (scene: Scene) => void) {

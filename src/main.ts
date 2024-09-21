@@ -1,17 +1,17 @@
-import { Scene } from "@babylonjs/core/scene";
+import '@babylonjs/core/Animations/animatable';
 import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
 import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
-import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder";
-import { Vector3 } from "@babylonjs/core/Maths/math.vector";
-import "@babylonjs/core/Materials/standardMaterial";
-import { setupBabylon } from "./setup_babylon";
-import { PhysicsAggregate } from "@babylonjs/core/Physics/v2/physicsAggregate";
-import { PhysicsShapeType } from "@babylonjs/core/Physics/v2/IPhysicsEnginePlugin";
 import { SceneLoader } from '@babylonjs/core/Loading/sceneLoader';
-import '@babylonjs/loaders/glTF/2.0';
-//import '@babylonjs/core/Animations/animatable';
-import foxUrl from "./assets/fox.glb"
+import "@babylonjs/core/Materials/standardMaterial";
+import { Vector3 } from "@babylonjs/core/Maths/math.vector";
+import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder";
 import { TransformNode } from "@babylonjs/core/Meshes/transformNode";
+import { PhysicsShapeType } from "@babylonjs/core/Physics/v2/IPhysicsEnginePlugin";
+import { PhysicsAggregate } from "@babylonjs/core/Physics/v2/physicsAggregate";
+import { Scene } from "@babylonjs/core/scene";
+import '@babylonjs/loaders/glTF/2.0';
+import foxUrl from "./assets/fox.glb";
+import { setupBabylon } from "./setup_babylon";
 
 
 setupBabylon(async (scene: Scene) => {
