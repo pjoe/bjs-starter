@@ -24,7 +24,8 @@ setupBabylon(async (scene: Scene) => {
     scene
   );
   camera.attachControl();
-  const light1 = new HemisphericLight("light1", new Vector3(1, 1, 0), scene);
+  
+  new HemisphericLight("light1", new Vector3(1, 1, 0), scene);
 
   const sphere = MeshBuilder.CreateSphere("sphere", { diameter: 1 }, scene);
   sphere.position.y = 3.5;
