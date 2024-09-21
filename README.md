@@ -10,5 +10,5 @@
 ## Open in cloud IDEs
 
 - [CodeSandbox](https://codesandbox.io/p/github/pjoe/bjs-starter/main?file=%2Fsrc%2Fmain.ts%3A18%2C1)
-- [StackBlitz](https://stackblitz.com/~/github.com/pjoe/bjs-starter?file=src/main.ts:L18)
+- [StackBlitz](https://stackblitz.com/~/github.com/pjoe/bjs-starter?file=src/main.ts:L18) (preview may take a bit to load first time)
 - [Gitpod](https://gitpod.io/#https://github.com/pjoe/bjs-starter)
