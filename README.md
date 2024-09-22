@@ -9,6 +9,9 @@
 
 ## Open in cloud IDEs
 
-- [CodeSandbox](https://codesandbox.io/p/github/pjoe/bjs-starter/main?file=%2Fsrc%2Fmain.ts%3A18%2C1)
-- [StackBlitz](https://stackblitz.com/~/github.com/pjoe/bjs-starter?file=src/main.ts:L18) (preview may take a bit to load first time)
-- [Gitpod](https://gitpod.io/#https://github.com/pjoe/bjs-starter)
+[![Open in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/github/pjoe/bjs-starter/main?file=/src/main.ts:18,C1)
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/pjoe/bjs-starter?file=src/main.ts:L18)
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/pjoe/bjs-starter)
+
